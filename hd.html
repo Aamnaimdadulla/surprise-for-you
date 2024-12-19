@@ -1,0 +1,227 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style type="text/css">
+        body {
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #fff8e8;
+        }
+
+        .card {
+            position: relative;
+            width: 90%; /* Adjust width to 90% for responsiveness */
+            max-width: 350px; /* Maximum width for larger screens */
+            height: auto;
+            border: 10px solid #9612eb;
+            margin: 60px auto;
+            background-image: linear-gradient(to bottom, ),
+                url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #ffa7ff;
+            box-shadow: inset 10px 0px 15px 0px #ac0f70;
+            border-radius: 10px;
+            overflow: hidden; /* Ensures no content overflows */
+            transition: transform 0.3s ease;
+        }
+
+        .card .text-container {
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .card #head {
+            font-family: 'Nobile', sans-serif;
+            font-size: 1.5em;
+            color: #300a0a;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.4;
+            font-family: 'Nobile';
+            color: #2e1111;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .card h5 {
+            text-align: center;
+            margin-top: -20px;
+            font-size: 1.2em;
+            color: #550404;
+        }
+
+        .card .front,
+        .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 10px solid #9612eb;
+            margin: -10px 0px 0px -10px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transform-origin: 0% 50%;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .card .front {
+            background-color: #9612eb;
+        }
+
+        .card .back {
+            background-color: #e6f0e6;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+        }
+
+        .card:hover .front {
+            transform: perspective(800px) rotateY(-170deg);
+            background-color: #41718d;
+        }
+
+        .card:hover .back {
+            transform: perspective(800px) rotateY(-170deg);
+            background-color: #ffc1ff;
+        }
+
+        .imgset {
+            position: relative;
+            z-index: 1;
+            margin-bottom: -215px;
+        }
+
+        .imgset img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+        }
+
+        .btn-next {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #924ace;
+            font-weight: bold;
+            color: rgb(57, 6, 78);
+            text-align: center;
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-next:hover {
+            background-color: rgb(205, 163, 245);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 90%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            .card #head {
+                font-size: 1.3em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+
+            .card h5 {
+                font-size: 1em;
+            }
+
+            .btn-next {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                width: 90%;
+                max-width: 250px;
+            }
+
+            .card #head {
+                font-size: 1.2em;
+            }
+
+            .card p {
+                font-size: 0.9em;
+            }
+
+            .card h5 {
+                font-size: 0.9em;
+            }
+
+            .btn-next {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="back"></div>
+    <div class="front">
+        <div class="imgset">
+            <img src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png" alt="Image">
+        </div>
+    </div>
+    <div class="text-container">
+        <p id="head"><b>Muavia Rabbani!</b></p>
+        <h5>Aap Ke Liye....</h5>
+        <p>
+            ،ادھوری چاہتیں میری<br>
+            ،ادھوری داستان میری<br>
+            ،میرے جذبات ادھورے ہیں<br>
+            ،میری خواہش کے پیمانے ادھورے ہیں<br>
+            ،محبت کے میرے ہونٹوں پہ<br>
+            ،افسانے ادھورے ہیں<br>
+            ،ادھورے پن کی ایک دنیا<br>
+            ،میرے چاروں طرف ہے<br>
+            ،پھر بھی اپنے دل کی<br>
+            ،سب گہرائیوں کے ساتھ<br>
+            ،سب سچائیوں کے ساتھ<br>
+            ،میں اقرار کرتی ہوں<br>
+            میں تم سے محبت کرتی ہوں!
+        </p>
+    </div>
+</div>
+
+<a href="my.html">
+    <button class="btn-next">Agla Page</button>
+</a>
+
+</body>
+</html>
+

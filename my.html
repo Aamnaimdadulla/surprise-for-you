@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Text Below</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif; /* Font style */
+            text-align: center; /* Center the content */
+            background-color: #c0b9b9; /* Background color of the page */
+            padding: 20px;
+        }
+
+        .image-container {
+            display: inline-block; /* To center the image container */
+            text-align: center; /* Center the image and text */
+            background-color: #fff; /* Background color for the container */
+            padding: 20px; /* Add padding around the image and text */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+            max-width: 80%; /* Make the container responsive */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ensure image is responsive and doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Limit the maximum height of the image */
+            border-radius: 8px; /* Optional: rounded corners for the image */
+        }
+
+        .image-caption {
+            font-size: 20px; /* Text size */
+            color: #333; /* Text color */
+            margin-top: 15px; /* Space between image and text */
+            font-weight: bold; /* Make the text bold */
+        }
+        p {
+            font-size: 18px; /* Text size */
+            color: rgb(5, 5, 5); /* White text color */
+            font-weight: bold; /* Bold text */
+            background-color: rgba(112, 106, 106, 0.5); /* Optional: semi-transparent background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Optional: rounded corners for the text background */
+            margin-top: 20px; /* Space above the paragraph */
+        }
+
+        .btn-next {
+    display: block;
+    margin: 0 auto; /* Horizontally center */
+    margin-top: 20px; /* Button ko thoda sa neeche shift karne ke liye */
+    padding: 10px 20px;
+    border: none; /* Border ko hataane ke liye */
+    border-radius: 5px; 
+    background: linear-gradient(45deg, #211f22, #555555, #ffffff); /* Black, grey, and white gradient */
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Text color white */
+    text-align: center; /* Align the text to center */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* Remove any text underline or decoration */
+    border-bottom: 2px solid black; /* Optional: Add black bottom border if needed */
+}
+
+.btn-next:hover {
+    background: linear-gradient(45deg, #555555, #333333, #ffffff); /* Lighter shade of grey and white for hover */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="images/yaad-1.png" alt="Image description"> <!-- Image path -->
+        <div class="image-caption">وہ شخص کس قدر  خاص ہوگا ، جس    کو  تہجد میں مانگا ہو ۔</div> <!-- Text below the image -->
+
+    </div>
+    <p>✨Jab Ye Pic Pehli Bar Dekhi Ti Tab Yahi Ik Line Likhi <BR></BR>Ti Buhat Dil Se. Or Is Pic Me Mai Ny Tumhy Itna Dekha Ta Jetna Aaj Tak Shayad Hi kisi Ny Kisi Ko Dekha Ho.✨</p>
+
+
+    
+<a href="my2.html">
+    <button class="btn-next">Next Page SIR</button>
+</a>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- complete-------------------------------------------------- -->

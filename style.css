@@ -1,0 +1,129 @@
+ General Styles
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.birthdayimg {
+    background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: red;
+    font-size: 35px;
+}
+
+.topleft, .bottomleft {
+    position: absolute;
+    color: yellow;
+    top: 10px;
+    left: 10px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: 20px auto;
+    width: 40%;
+}
+
+.surprise-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.back-link {
+    font-size: 20px;
+    color: blue;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; 
+};
+
+.wishes, .memories {
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin: 10px 0;
+}
+
+.wishes-list {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.wish-counter, .social-sharing, .birthday-cake, .confetti-effects {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wish-counter h2, .social-sharing a {
+    font-size: 1.5rem;
+} 
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.slider img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+};
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------- */
+
+

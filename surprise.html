@@ -1,0 +1,175 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #c48f9c63;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #550404;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #850101;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        a {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #75a3d3;
+            font-weight: bold;
+            color: rgb(9, 11, 128);
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            border-bottom: 2px solid rgb(247, 247, 241);
+        }
+        a:hover {
+            background: linear-gradient(45deg, #ec42d6, #f033b1, #ec6cbb);
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flex grid layout */
+            gap: 15px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Styling */
+        a {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #75a3d3;
+            font-weight: bold;
+            color: rgb(9, 11, 128);
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            border-bottom: 2px solid rgb(247, 247, 241);
+        }
+
+        .btn-next:hover {
+            background: linear-gradient(45deg, #ec42d6, #f033b1, #ec6cbb);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            a {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            .image-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .image-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 5px;
+            }
+            a {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Surprise Page!</h1>
+    <p>Mera Chunnu Munnu KHAN!</p>
+
+    <div class="image-gallery">
+        <img src="images/s-1.jpg" alt="Image 1">
+        <img src="images/s-2.jpg" alt="Image 2">
+        <img src="images/s-3.jpg" alt="Image 3">
+        <img src="images/s-4.jpg" alt="Image 4">
+        <img src="images/s-5.jpg" alt="Image 5">
+        <img src="images/s-6.png" alt="Image 6">
+        <img src="images/s-8.png" alt="Image 7">
+        <img src="images/s-10.jpeg" alt="Image 8">
+        <img src="images/s-7.jpg" alt="Image 9">
+        <img src="images/s-9.jpg" alt="Image 10">
+        <img src="images/s-13.png" alt="Image 11">
+        <img src="images/s-11.jpg" alt="Image 12">
+        <img src="images/s-12.png" alt="Image 13">
+    </div>
+
+    <a href="hd.html">Surprise</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
